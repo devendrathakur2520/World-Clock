@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import Clock from "./Clock";
 import { Button, Card } from "react-bootstrap";
+import moment from "moment";
 
-const countries = [
-  "America/New_York",
-  "Europe/London",
-  "Asia/Tokyo",
-  "Africa/Cairo",
-];
+// const countries = [
+//   "America/New_York",
+//   "Europe/London",
+//   "Asia/Tokyo",
+//   "Africa/Cairo",
+// ];
+const countries = moment.tz.names();
 
 function Countries() {
   const [selectedCountry, setSelectedCountry] = useState(countries[0]);
