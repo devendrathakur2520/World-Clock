@@ -38,19 +38,23 @@ function StopWatch() {
   };
 
   return (
-    <div
-      className="stop-watch"
-      style={{ justifyContent: "center", margin: "auto" }}
-    >
-      <Timer time={time} />
-      <ControlButtons
-        active={isActive}
-        isPaused={isPaused}
-        handleStart={handleStart}
-        handlePauseResume={handlePauseResume}
-        handleReset={handleReset}
-      />
-    </div>
+    <>
+      <h1>Stop-Watch</h1>
+
+      <div
+        className="stop-watch"
+        style={{ justifyContent: "center", margin: "auto", height: "    " }}
+      >
+        <Timer time={time} />
+        <ControlButtons
+          active={isActive}
+          isPaused={isPaused}
+          handleStart={handleStart}
+          handlePauseResume={handlePauseResume}
+          handleReset={handleReset}
+        />
+      </div>
+    </>
   );
 }
 

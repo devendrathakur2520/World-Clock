@@ -11,10 +11,10 @@ function CollapsibleExample() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className=" " style={{ margin: "auto" }}>
             <Link className="mx-5" to="/">
-              <i class="fa-solid fa-clock"></i>
+              <i className="fa-solid fa-clock"></i>
             </Link>
             <Link className="mx-5" to="/stopwatch">
-              <i class="fa-solid fa-stopwatch"></i>
+              <i className="fa-solid fa-stopwatch"></i>
             </Link>
           </Nav>
         </Navbar.Collapse>

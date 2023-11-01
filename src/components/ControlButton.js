@@ -1,18 +1,29 @@
 import React from "react";
-import "./ControlButton.css";
 
 export default function ControlButtons(props) {
   const StartButton = (
-    <div className="btn btn-one btn-start" onClick={props.handleStart}>
+    <div
+      className="btn btn-one btn-start"
+      style={{ color: "aquamarine" }}
+      onClick={props.handleStart}
+    >
       Start
     </div>
   );
   const ActiveButtons = (
     <div className="btn-grp">
-      <div className="btn btn-two" onClick={props.handleReset}>
+      <div
+        className="btn btn-two"
+        style={{ color: "darkred" }}
+        onClick={props.handleReset}
+      >
         Reset
       </div>
-      <div className="btn btn-one" onClick={props.handlePauseResume}>
+      <div
+        className="btn btn-one"
+        style={{ color: "#adad1b" }}
+        onClick={props.handlePauseResume}
+      >
         {props.isPaused ? "Resume" : "Pause"}
       </div>
     </div>

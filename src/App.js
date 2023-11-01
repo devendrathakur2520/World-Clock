@@ -11,8 +11,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Countries />} />
-        </Routes>
-        <Routes>
           <Route path="/stopwatch" element={<StopWatch />} />
         </Routes>
         {/* <Countries /> */}
