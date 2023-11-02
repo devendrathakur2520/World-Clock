@@ -68,8 +68,7 @@ function Countries() {
         }}
       >
         <Button onClick={() => prevPage()} disabled={currentPage === 0}>
-          {" "}
-          prev{" "}
+          prev
         </Button>
         {currentPage + 1} of {nPage}
         <Button

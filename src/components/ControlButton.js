@@ -32,6 +32,20 @@ export default function ControlButtons(props) {
   return (
     <div className="Control-Buttons">
       <div>{props.active ? ActiveButtons : StartButton}</div>
+      <div
+        className="btn btn-one btn-start"
+        style={{ color: "aquamarine" }}
+        onClick={props.handleReverse}
+      >
+        5 min
+      </div>
+      {/* <div
+        className="btn btn-one btn-start"
+        style={{ color: "aquamarine" }}
+        onClick={props.handleReverse}
+      >
+        10 min
+      </div> */}
     </div>
   );
 }
