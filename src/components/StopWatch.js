@@ -8,7 +8,7 @@ function StopWatch() {
   const [isPaused, setIsPaused] = useState(true);
   const [time, setTime] = useState(0);
   const [reverse, setReverse] = useState(10);
-  const [timer, setTimer] = useState(0);
+  // const [timer, setTimer] = useState(0);
 
   useEffect(() => {
     let interval = null;
@@ -24,7 +24,7 @@ function StopWatch() {
     return () => {
       clearInterval(interval);
     };
-  }, [isActive, isPaused, reverse]);
+  }, [isActive, isPaused]);
 
   const handleStart = () => {
     setIsActive(true);
@@ -40,9 +40,9 @@ function StopWatch() {
     setTime(0);
   };
 
-  const handleReverse = () => {
-    setTime(5 * 60000);
+  const handleReverse = (e) => {
     setReverse(-10);
+    setTime(5 * 60000);
   };
 
   return (
