@@ -10,6 +10,7 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className=" " style={{ margin: "auto" }}>
+<div>Hello World</div>
             <Link className="mx-5" to="/">
               <i className="fa-solid fa-clock"></i>
             </Link>
